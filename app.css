@@ -1,0 +1,119 @@
+*{
+ margin: 0;
+ padding: 0;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(img/office.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    color: white;
+    display: flex; 
+    padding: 35px;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin:0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+
+.navbar ul li a::after{
+content: '';
+height: 3px;
+width: 0;
+background-color: aqua;
+position:absolute;
+left: 0;
+bottom: -10px;
+transition: 0.5s;
+
+}
+
+.navbar ul li :hover::after{
+    width: 100%;
+  
+}
+.logo{
+    width: 100px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.navbar ul li{
+    text-transform: uppercase;
+
+}
+.content{
+    color: white;
+    width: 100%;
+    top: 50%;
+    position: absolute;
+    transform: translateY(-59%);
+    text-align: center;
+}
+
+.content h1{
+    
+    font-size: 42px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.content p{
+    color: azure;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 20px 0;
+    
+}
+
+.btn button{
+    width: 200px;
+    margin: 20px;
+    color: aquamarine;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px;
+    font-weight: bold;
+    border:2px solid teal;
+    background: transparent;
+    color:white;
+    overflow: hidden;
+    position:relative;
+    border-radius: 25px;
+}
+
+
+
+span{
+    background: teal;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s;
+}
+.btn button:hover span{
+    width: 100%;
+}
+.btn button:hover{
+    border:none;
+}
